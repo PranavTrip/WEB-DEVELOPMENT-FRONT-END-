@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX AND TEXT SHADOW</title>
+    <style>
+        .box {
+            width: 100%vw;
+            height: 100%vh;
+            border: 3px solid black;
+            padding: 3px 5px;
+            box-shadow: 5px 5px 5px 3px red;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #box2 {
+            border: 2px solid green;
+            padding: 3px 5px;
+            box-shadow: inset 5px 5px 5px 3px red;
+        }
+
+        #box1 {
+            border: 2px solid blue;
+            padding: 2px 2px;
+            box-shadow: -2px -2px 5px 3px blue;
+        }
+
+        p {
+            font-weight: bold;
+            text-align: center;
+            text-shadow: -5px -5px 3px white;
+            background-color: turquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BOX AND TEXT SHADOW</h1>
+    <div class="box">
+        <p id="box1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos minus numquam voluptatem consequatur
+            a, ut laborum maxime voluptatum culpa itaque.</p>
+        <p id="box2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, dolorum est, totam sint et at voluptatibus
+            cupiditate impedit ratione, autem explicabo dolores officiis natus necessitatibus nemo illum vero obcaecati
+            atque minima eos officia quibusdam placeat. Nisi doloribus dolores omnis incidunt, vero, adipisci vitae
+            molestias ratione nemo impedit eius, consequatur repellat!
+        </p>
+    </div>
+</body>
+
+</html>
