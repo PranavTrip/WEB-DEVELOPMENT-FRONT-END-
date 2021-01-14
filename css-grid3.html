@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID TEMPLATE AREA AND AUTOFIX/MINMAX</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* MAKES WEBSITE SOMEWHAT RESPONSIVE */
+            grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+            grid-template-areas: 'navbar navbar navbar navbar'
+                'section section sedction aside''footer footer footer footer';
+            grid-gap: 30px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .item {
+            border: 2px solid black;
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="navbar" class="item">
+            HOME SERVICES ABOUT US CONTACT US
+        </div>
+        <div id="section" class="item">
+            <h2>This is section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione illo eius aspernatur ex
+                quasi tempore voluptate dignissimos enim eligendi, corrupti dolorem, quis tenetur ad consectetur
+                repellendus voluptas atque facilis? Suscipit earum amet nemo eos voluptatum nobis sed dolor, nulla
+                tenetur, eligendi nostrum et, commodi laudantium. Beatae odit sunt itaque atque, saepe, dolorum
+                distinctio voluptatibus praesentium quae aperiam, nostrum veritatis.</p>
+        </div>
+        <div id="aside" class="item">
+            <h2>This is ASIDE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore distinctio dolor obcaecati modi assumenda
+                sunt debitis, aperiam quibusdam blanditiis ea? Laboriosam obcaecati eligendi quia debitis distinctio
+                vel, eius at doloribus.</p>
+        </div>
+        <footer class="item">
+            <p>Thanks for visiting <br> VISIT AGAIN!</p>
+        </footer>
+    </div>
+</body>
+
+</html>
