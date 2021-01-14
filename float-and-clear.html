@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOAT AND CLEAR PROPERTIES IN CSS</title>
+    <style>
+        #para1 {
+            width: 48%;
+            float: left;
+            background-color: rgba(227, 227, 33, 0.721);
+            border: 2px solid red;
+            margin: 5px 2px;
+        }
+
+        #para2 {
+            width: 48%;
+            float: right;
+            background-color: rgba(38, 194, 233, 0.493);
+            border: 2px solid green;
+            margin: 5px 2px;
+        }
+
+        .container {
+            background-color: rgb(159, 203, 241);
+        }
+
+        #para3 {
+            background-color: blueviolet;
+            border: 3px solid black;
+            /* clear: left; */
+            /* Clears only left element */
+            clear: both;
+            /* Clears both the elements on left and right */
+        }
+
+        #para4 {
+            background-color: cornflowerblue;
+            border: 3px solid blue;
+            clear: both;
+            margin: 5px 2px;
+
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .grocery {
+            padding: 5px 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Experimenting on float and clear -->
+    <div class="container">
+        <div id="para1">
+            <h3>Fruits</h3>
+            <p class="grocery" id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iusto vitae
+                nesciunt
+                ad blanditiis sequi, odio iste? Maxime, laboriosam nihil quisquam voluptatum eveniet ullam iste
+                dignissimos
+                iure, quidem voluptas temporibus, aliquam animi nisi? Repellendus iure ab officia assumenda aperiam
+                ratione?
+            </p>
+        </div>
+        <div id="para2">
+            <h3>Vegetables</h3>
+            <p class="grocery" id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorum nesciunt
+                quia explicabo cupiditate magnam, aspernatur unde neque repellendus harum rerum error perferendis alias
+                iusto fugiat quidem eaque sint. Perspiciatis fugit at harum atque cupiditate incidunt, nobis repellendus
+                ut
+                laborum?</p>
+        </div>
+        <div id="para3">
+            <h3>Drinks</h3>
+            <p class="grocery" id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa earum vel
+                quis
+                placeat quia quod, dignissimos veritatis ex amet voluptatem impedit illo exercitationem vero enim
+                cupiditate, architecto temporibus sunt assumenda ducimus, perferendis saepe deleniti? Nulla sint
+                voluptates
+                mollitia ipsum.</p>
+        </div>
+        <div id="para4">
+            <h3>Snacks</h3>
+            <p class="grocery" id="box4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis saepe, sit,
+                nulla
+                repudiandae perspiciatis obcaecati blanditiis unde adipisci sed placeat molestias ea eos illum
+                exercitationem quo nemo natus explicabo numquam sapiente excepturi? Atque commodi cum repudiandae
+                quaerat
+                voluptatem deleniti laboriosam!</p>
+        </div>
+    </div>
+</body>
+
+</html>
