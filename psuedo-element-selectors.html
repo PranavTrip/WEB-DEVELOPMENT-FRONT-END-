@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO ELEMENT SELECTORS</title>
+    <style>
+        body {
+            background-color: grey;
+            color: black;
+        }
+
+        div p::first-letter {
+            font-size: 80px;
+        }
+
+        .navbar ul {
+            display: flex;
+            background-color: black;
+            border: 2px solid black;
+            border-radius: 100px;
+
+        }
+
+        li {
+            list-style: none;
+            margin: 2px 2px;
+            padding: 2px 2px;
+            color: white;
+        }
+
+        li:hover {
+            color: red;
+            text-decoration: underline;
+            border: 3px solid white;
+        }
+
+        h2 {
+            text-align: center;
+            border: 2px solid darkslategray;
+            display: block;
+            margin: auto;
+            width: 150px;
+        }
+
+        .container {
+            border: 3px solid red;
+        }
+
+        p::before {
+            content: "This is before pseudo selector. ";
+            color: blue;
+        }
+
+        p::after {
+            content: " This is after pseudo selector.";
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>SERVICES</li>
+                <li>CONTACT US</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>WELCOME!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure culpa explicabo, obcaecati ducimus repudiandae
+            quidem, laudantium saepe eos impedit, error sequi veritatis! Consequatur eveniet iure quidem sequi! Fuga
+            nemo consequatur dicta quidem sequi ipsum perferendis numquam reprehenderit labore et doloremque minus,
+            incidunt, eum quam rerum illo aspernatur facere adipisci sint!</p>
+
+    </div>
+</body>
+
+</html>
