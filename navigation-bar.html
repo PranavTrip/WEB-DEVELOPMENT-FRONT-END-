@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION BAR</title>
+    <style>
+        .navbar {
+            border: 5px solid black;
+            background-color: grey;
+            border-radius: 100px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style-type: none;
+            margin: 4px 17px;
+            padding: 1px 1px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: red;
+            border: 2px double blue;
+            cursor: grab;
+        }
+
+        .navbar li a:visited {
+            border: 3px solid black;
+            background-color: yellowgreen;
+        }
+
+        #search {
+            border: 1px solid black;
+            float: left;
+            border-radius: 8px;
+            margin: 4px 8px;
+            padding: 2px 2px;
+            text-align: center;
+            font-style: italic;
+            margin-left: 585px;
+        }
+
+        img {
+            width: 23px;
+            margin-top: 0px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <input type="text" placeholder="SEARCH" id="search">
+                <img src="https://image.shutterstock.com/image-vector/magnifying-glass-search-icon-flat-260nw-738763579.jpg"
+                    alt="no">
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
