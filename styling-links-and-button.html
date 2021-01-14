@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLING LINKS AND BUTTONS</title>
+    <style>
+        .btn {
+
+            border: 1px solid red;
+            border-radius: 15px;
+        }
+
+        .btn:hover {
+            cursor: grab;
+            background-color: black;
+            color: white;
+            text-decoration: underline;
+        }
+
+        a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: red;
+            border: 3px solid green;
+            border-radius: 5px;
+        }
+
+        a:visited {
+            color: blue;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Links</h2>
+        <a href="https://www.google.com" target="_blank" class="links">GOOGLE</a><br>
+        <a href="https://www.linkedin.com" target="_blank" class="links">LINKEDIN</a><br>
+        <a href="https://www.instagram.com" target="_blank" class="links">INSTAGRAM</a><br>
+        <a href="https://www.facebook.com" target="_blank" class="links">FACEBOOK</a><br>
+        <h2>Buttons</h2>
+        <button class="btn">SUBMIT</button>
+        <button class="btn">RESET</button>
+    </div>
+</body>
+
+</html>
