@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMBINATORS IN CSS</title>
+    <style>
+        /* Applies to all <div> */
+        div {
+            border: 2px solid green;
+        }
+
+        /* Applies on all the <p> inside <div> */
+        div p {
+            font-style: italic;
+        }
+
+        /* Applies to <li> inside <div> */
+        div li {
+            list-style: georgian;
+        }
+
+        /* Applies to the direct <p> inside <div> no other <p> will be styled*/
+        div>p {
+            background-color: black;
+            color: white;
+        }
+
+        /* Applies only on <p> just after </div> */
+        div+p {
+            border: 3px solid red;
+        }
+
+        /* Applies on the <p> who are siblings of <div> */
+        div~p {
+            color: red;
+        }
+
+        /* Applies on the <li> inside <ul> inside <div> */
+        div ul li {
+            border: 2px solid black;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, perferendis!</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div>
+                <p>This is unordered list</p>
+                <ul>
+                    <p>Hello this is pranav</p>
+                    <li>Hello</li>
+                    <li>This</li>
+                    <li>Is</li>
+                    <li>Pranav</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita provident eaque mollitia quos
+        labore!</p>
+</body>
+
+</html>
