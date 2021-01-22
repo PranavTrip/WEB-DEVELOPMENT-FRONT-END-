@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRINGS IN JAVASCRIPT</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>STRING AND ITS PROPERTIES IN JAVASCIPT</p>
+    </div>
+    <script>
+        // We can use either '' or "" to initialize a string
+        // We can also use `` to initialize a string
+        let txt = "String";
+        let txt1 = 'String1';
+        let txt2 = `Strings2`;
+        console.log("The respective string is " + txt);
+        console.log("The respective string is " + txt1);
+        console.log("The respective string is " + txt2);
+        // Finding length of strings
+        let l1, l2, l3;
+        l1 = txt.length;
+        l2 = txt1.length;
+        l3 = txt2.length;
+        console.log("The length of respectve string is " + l1);
+        console.log("The length of respectve string is " + l2);
+        console.log("The length of respectve string is " + l3);
+        // Finding a string in a string
+        let str = "Hello, I am Pranav Tripathi";
+        let pos = str.indexOf("am");
+        let pos1 = str.lastIndexOf("Tripathi");
+        console.log("The position of am  is " + pos);
+        console.log("The position of Tripathi  is " + pos1);
+        // Extracting Parts of string(SUBSTRING) from a string
+        // There are 3 methods to extract a substring from a string
+        let str1 = str.slice(2, 10);
+        console.log("The extracted string is " + str1);
+        let str2 = str.substring(2, 10);
+        console.log("The extracted string is " + str2);
+        let str3 = str.substr(2, 8);
+        console.log("The extracted string is " + str3);
+        // Replacing string content
+        let str4 = str.replace("I am", "This is");
+        console.log("The replaced string is " + str4);
+        // Converting Cases In A String
+        let str5 = str.toUpperCase();
+        console.log("The string in upper case is " + str5);
+        let str6 = str.toLowerCase();
+        console.log("The string in lower case is " + str6);
+        // Concatenating two strings
+        // There are two methods to add a string
+        let txt3 = txt1 + " " + txt2;
+        console.log("The concatenated strings are " + txt3);
+        let txt4 = txt.concat(" ", txt1);
+        console.log("The concatenated strings are " + txt4);
+        // Trimming a string
+        let string = "       Helloo, World                                 ";
+        console.log("The normal string is " + string);
+        console.log("The trimmed string is " + string.trim());
+        // Extracting String characters
+        console.log("The extracted character is " + txt.charAt(3));
+        console.log("The extracted character is " + txt.charCodeAt(3));
+
+    </script>
+</body>
+
+</html>
