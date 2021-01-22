@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDITIONAL STATEMENTS IN JAVASCRIPT </title>
+</head>
+
+<body>
+    <div class="container">
+        <p>CONDITIONAL STATEMENTS IN JAVASCRIPT</p>
+    </div>
+    <script>
+        // There are 4 types of conditional statements in JavaScript
+        // Here == and != are comparision operators
+        let a = 5, b = 10;
+        if (a == b) {
+            console.log("a=b");
+        }
+        if (a != b) {
+            console.log("a is not equal to b");
+        }
+        let x = 2;
+        // Here % is modulo  division operator
+        if (x % 2 == 0) {
+            console.log(x + " is even");
+        }
+        else {
+            console.log(x + " is odd")
+        }
+        let p = 3, q = 4, r = 5;
+        // Here && is the logical AND Operator
+        if (p > q && p > r) {
+            console.log(p + " is the largest");
+        }
+        else if (q > p && q > r) {
+            console.log(q + " is the largest");
+        }
+        else {
+            console.log(r + " is the largest");
+        }
+        let e = 3;
+        switch (e) {
+            case 1: {
+                console.log("First number");
+                break;
+            }
+            case 2: {
+                console.log("Second number");
+                break;
+            }
+            case 3: {
+                console.log("Third number");
+                break;
+            }
+            case 4: {
+                console.log("Fourth number");
+                break;
+            }
+            default: {
+                console.log("INVALID");
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>
