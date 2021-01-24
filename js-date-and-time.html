@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT DATES AND TIMES</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>Date and Time in JavaScript</p>
+        The date is <span id="time"></span>
+    </div>
+    <script>
+        let date = new Date;
+        console.log(date);
+        // new Date() generates the current date and time in the console
+        setInterval(TIME, 1000);
+        function TIME() {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+
+</html>
