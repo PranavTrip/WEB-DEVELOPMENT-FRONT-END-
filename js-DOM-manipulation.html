@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION IN JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <p>This is the navigation bar</p>
+        </nav>
+        <ul>
+            <li id="Item1" class="items">Item 1</li>
+            <li id="Item2" class="items">Item 2</li>
+            <li id="Item3" class="items">Item 3</li>
+            <li id="Item4" class="items">Item 4</li>
+            <li id="Item5" class="items">Item 5</li>
+        </ul>
+        <button class="btn">SUBMIT NOW!</button>
+    </div>
+    <script>
+        // DOM stands for Document Object Model
+        // Using JavaScript we can change the HTML and CSS using some specified properties
+        // First is using ID
+        let li2 = document.getElementById('Item2');
+        li2.innerHTML = "This is edited using JS";
+        // second is using CLASSES
+        let btnnew = document.getElementsByClassName('btn');
+        console.log(btnnew);
+        // Third is using query selectors
+        let nav2 = document.querySelector('#navbar');
+        console.log(nav2);
+        nav2.innerHTML = "NAVIGATION BAR";
+        // We can use all selectors at a timwe using querySelectorAll()
+    </script>
+</body>
+
+</html>
