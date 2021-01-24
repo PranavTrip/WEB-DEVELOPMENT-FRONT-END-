@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH OBJECTS IN JAVASCRIPT</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>
+            This is math objects in JAVASCRIPT
+        </p>
+    </div>
+    <script>
+        let a = 5.66;
+        let b = -5.66;
+        // To round off a number
+        let round = (Math.round(a));
+        console.log("The round off number is " + round)
+        // To evaluate power of any number
+        let power = (Math.pow(3, 2));
+        console.log("3 raised to power 2 is " + power);
+        // To find square root of a number
+        let root = (Math.sqrt(4));
+        console.log("The square root of 4 is " + root);
+        // To find cube root of any number
+        let croot = (Math.cbrt(8));
+        console.log("The cube root of 8 is " + croot);
+        // To absolute any value 
+        let pabs = (Math.abs(a));
+        let nabs = (Math.abs(b));
+        console.log("The absolute value of and b is " + a + " " + b);
+        // To find the ceil amd floor value of any number
+        let cceil = (Math.ceil(a));
+        console.log("The ceil value of a is " + cceil);
+        let ffloor = (Math.floor(a));
+        console.log("The floor value of a is " + ffloor);
+        // Finding max and min values in an array
+        let Arr = [1, 2, 3, 4, 5, 6];
+        let maxarr = (Math.max(1, 2, 3, 4, 5, 6));
+        console.log("The maximum number in the array is " + maxarr);
+        let minarr = (Math.min(1, 2, 3, 4, 5, 6));
+        console.log("The maximum number in the array is " + minarr);
+        // Evaluating Trigonometric functions
+        let vsin = (Math.sin(Math.PI));
+        console.log("The value of sin pi is " + vsin);
+        let vcos = (Math.cos((Math.PI)));
+        console.log("The value of cos pi/2 is " + vcos);
+        let vtan = (Math.tan(0));
+        console.log("The value of tan 0 is " + vtan);
+    </script>
+</body>
+
+</html>
