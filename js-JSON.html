@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON IN JAVASCRIPT</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>JSON in JavaScript</p>
+    </div>
+    <script>
+        // JSON stands for JavaScript Object Notation
+        // JSON is used to transfer, recieve, store data by converting objects into strings
+        let employee = {
+            Name: "Pranav",
+            Age: 20,
+            Role: "Developer"
+        }
+        console.log(employee);
+        // Converting this object in string
+        let mystr = JSON.stringify(employee);
+        console.log(mystr);
+        // Now the object can be treated as a string and operfations can br performed on it
+        let replaced = mystr.replace("Developer", "Senior Developer");
+        console.log(replaced);
+        // Again converting the string to object
+        let newobj = JSON.parse(replaced);
+        console.log(newobj);
+    </script>
+</body>
+
+</html>
