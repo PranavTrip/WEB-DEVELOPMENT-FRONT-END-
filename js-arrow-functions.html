@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARROW FUNCTIONS IN JAVASCRIPT</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>Arrow functions in JavaScript</p>
+    </div>
+    <script>
+        // Arrow functions is a shortcut to write functions and its return value 
+        // A function with 0 parameters
+
+        let hello = () => console.log('Hello World');
+        hello;
+        // A function with 1 parameter
+        let a = 5;
+        let half = a => a / 2;
+        console.log(half(a));
+        // A function with 2 parameters
+        let b = 6;
+        let add = (a, b) => a + b;
+        console.log(add(a, b));
+    </script>
+</body>
+
+</html>
