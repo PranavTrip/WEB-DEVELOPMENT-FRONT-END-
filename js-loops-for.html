@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS IN JAVASCRIPT</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>THIS IS LOOPS IN JAVASCRIPT</p>
+    </div>
+    <script>
+        // The third loop among the three loops in JS is for loop
+        // For loop can be written in 4 ways and is the most used loop in JS 
+        let i = 1;
+        for (i = 1; i < 5; i++) {
+            console.log("The number is " + i);
+        }
+        // For loops are mostly used in arrays and strings and objects
+        // For-In loop
+        let employee = {
+            Name: "Pranav",
+            Age: 20,
+            Salary: "Nope"
+        }
+        for (key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+        // For-Of loop
+        let Arr = ["iphone", "realme", "redmi", "samsung"];
+        for (element of Arr) {
+            console.log("Your phone is " + element);
+        }
+        // For-Each loop
+        console.log("Using For-each loop");
+        Arr.forEach(function f(element) {
+            console.log("You are using " + element);
+        })
+    </script>
+</body>
+
+</html>
