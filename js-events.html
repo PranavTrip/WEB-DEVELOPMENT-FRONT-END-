@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS IN JAVASCRIPT</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: tomato;
+        }
+
+        p {
+            background-color: wheat;
+            color: black;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 32px;
+        }
+
+        .btn {
+            display: block;
+            margin: 20px auto;
+            width: 100px;
+        }
+
+        .btn:hover {
+            border: 2px solid red;
+            background-color: blueviolet;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>EVENTS In JAVASCRIPT</h1>
+        <p id="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas veniam possimus, omnis
+            molestiae modi odio?
+            Sit sunt tempora dolores aliquid quidem facilis? Aspernatur reiciendis expedita eius dolor similique
+            possimus reprehenderit, ex facere, consequuntur beatae earum quidem quia placeat nam eveniet. Fugiat earum
+            aliquam alias maxime sint temporibus quasi itaque necessitatibus, non culpa dicta obcaecati, quae sit porro,
+            delectus ea laboriosam vel quos ex repellendus! Adipisci fuga vero est, eos doloribus officiis repellat
+            perferendis veniam sunt mollitia atque nam laudantium eligendi aperiam debitis! Explicabo at expedita optio
+            vel hic sit repellendus aliquam cumque mollitia nostrum eius a iusto ipsa voluptas quaerat odio ut placeat
+            illum, eligendi temporibus. Quo officia, mollitia amet assumenda distinctio nam sapiente quod sunt fugit id,
+            eius corrupti aspernatur, nostrum ratione aut esse porro tempore architecto nemo? Rerum eligendi aliquam
+            obcaecati reprehenderit. Voluptatibus eius, sit nihil possimus quod maxime consequatur dolor non corporis.
+            Recusandae voluptatum similique pariatur nulla, rerum blanditiis vero voluptas architecto facere aspernatur
+            maxime fugit possimus laudantium incidunt ad, esse nihil quaerat aliquid libero! Autem atque unde nesciunt
+            fugiat accusantium delectus soluta iste, odit nostrum laudantium animi ipsam, velit perspiciatis suscipit.
+            Nulla deserunt amet aspernatur necessitatibus explicabo adipisci illo iure quo architecto autem nesciunt
+            non, pariatur nemo et atque nisi. Asperiores modi voluptatem magnam fuga aliquam doloribus harum, qui odit
+            quae quaerat exercitationem, laborum voluptatum perferendis sit. Natus fugiat est tempora, ab, neque
+            molestias nobis accusantium minima dolore deleniti quis, delectus voluptates distinctio. At, sequi ab quos
+            magnam cumque quas amet odio, illum ipsa similique recusandae, expedita odit ullam eveniet corrupti natus?
+            Tempora necessitatibus ad repudiandae porro voluptate quia quidem sed earum ipsam itaque id, obcaecati
+            quibusdam aperiam eligendi consectetur excepturi culpa pariatur blanditiis expedita cumque eius accusantium
+            repellat animi? Consectetur laudantium perferendis corrupti distinctio praesentium dolore commodi ab tempore
+            id sequi, impedit quia nam voluptationclickbus?</p>
+        <button class="btn" id="bton" onclick="showhide()">SHOW/HIDE
+            <button>
+    </div>
+    <script>
+        function showhide() {
+            let para = document.getElementById('paragraph');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
